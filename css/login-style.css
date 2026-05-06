@@ -1,0 +1,64 @@
+:root {
+    --spine-green: #00ff22;
+    --spine-dark: #1a2b33;
+    --bg-gradient: linear-gradient(135deg, #00d315 0%, #004d12 100%);
+    --input-bg: #e9ecef;
+}
+
+body.login-bg {
+    background: var(--bg-gradient);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-card {
+    max-width: 1000px;
+    width: 95%;
+    border-radius: 20px;
+    min-height: 600px;
+}
+
+.bg-light-blue {
+    background-color: #e9f1f7;
+}
+
+/* Inputs con estilo redondeado y gris del ejemplo */
+.custom-input {
+    background-color: var(--input-bg) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 20px !important;
+    font-size: 0.9rem;
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 0 2px var(--spine-green);
+}
+
+/* Botón Aceptar Verde Neón */
+.btn-aceptar {
+    background-color: var(--spine-green) !important;
+    color: #000 !important;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    transition: transform 0.2s ease;
+}
+
+.btn-aceptar:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+/* Animación sutil para la imagen del huevo */
+.floating-img {
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+/* Responsive Ajustes */
+@media (max-width: 991px) {
+    .login-card {
+        min-height: auto;
+    }
+}

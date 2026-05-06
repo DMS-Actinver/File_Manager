@@ -1,0 +1,69 @@
+/* Colores para Admin 2 (Morado/Magenta) */
+:root {
+    --admin2-main: #d633ff; /* El morado de tu captura */
+    --admin2-bg: #f8f0ff;
+}
+
+/* Cambiamos el fondo del header si es necesario o mantenlo igual */
+.admin-header {
+    background-color: #1a1a1a; /* O el color que uses en Admin 1 */
+}
+
+/* Zona de carga morada */
+.upload-zone {
+    background-color: var(--admin2-bg) !important;
+    border: 2px dashed #cca3ff !important;
+}
+
+/* Botones y textos en morado */
+.btn-outline-success, .btn-search-files {
+    border-color: var(--admin2-main) !important;
+    color: var(--admin2-main) !important;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--admin2-main) !important;
+    color: white !important;
+}
+
+.btn-success, .btn-subir-final {
+    background-color: var(--admin2-main) !important;
+    border-color: var(--admin2-main) !important;
+}
+
+.text-success {
+    color: var(--admin2-main) !important;
+}
+
+/* Filtro para que las flechas (arrow.svg) se vean moradas automáticamente */
+.file-list img {
+    filter: invert(28%) sepia(85%) saturate(3439%) hue-rotate(272deg) brightness(103%) contrast(108%);
+}
+
+/* Color morado para los nombres de archivos en el modal de éxito */
+.list-archivos-exito li {
+    color: #d633ff !important; /* El color morado de la imagen */
+}
+
+/* Estilo para el botón Salir */
+.btn-outline-purple {
+    border-color: #d633ff !important;
+    color: #d633ff !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-purple:hover {
+    background-color: #d633ff !important;
+    color: #ffffff !important;
+}
+
+/* Si el modal de confirmación todavía muestra nombres en verde, añade esto: */
+#modalConfirmacion .text-success {
+    color: #d633ff !important;
+}
+
+/* Sobreescribir el color verde de Bootstrap si se usa la clase btn-success */
+.btn-success {
+    background-color: #d633ff !important;
+    border-color: #d633ff !important;
+}
